@@ -84,6 +84,14 @@ span.banner {
 	background: url(img/bg_banner-wing-right.png);
 }
 
+.extra {
+	text-align: center;
+	font-size: 22px;
+	position: absolute;
+	width: 100%;
+	top: 350px;
+}
+
 .controls {
 	font-size: 22px;
 	text-align: center;
