@@ -1,0 +1,94 @@
+#intro {
+	padding: 0;
+	border: 0;
+}
+
+#intro h1 {
+	width: 60%;
+	min-height: 500px;
+	margin: 5% auto 0;
+}
+
+#intro .attribution {
+	text-align: center;
+	text-shadow: none;
+	padding: .2em 0 0;
+	overflow: hidden;
+}
+
+
+#css-controls-demo label {
+	display: block;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio:0) {
+/* hack to avoid using the Object element in Safari/WebKit, due to WebKit Bug 27190 */
+	object[type="image/svg+xml"] {
+		display: none;
+	}
+	
+	#intro h1 {
+		position: absolute;
+		top: 123px;
+		width: 100%;
+		height: 96px;
+		font-size: 72px;
+		line-height: 100px;
+		font-weight: normal;
+		text-align: center;
+		white-space: nowrap;
+		color: #fff;
+		text-shadow: 0 1px 1px rgba(0,0,0,.6);
+	}
+}
+
+span.banner {
+	position: relative;
+	display: inline-block;
+	height: 66px;
+	padding: 0 25px 30px;
+	font-weight: 700;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 4px 12px rgb(255,48,0), 0 6px 12px rgba(0,0,0,.7);
+	box-shadow: inset 0 4px 12px rgb(255,48,0), 0 6px 12px rgba(0,0,0,.7);
+	background: #ff3000 url(img/bg-banner.png);
+	background: url(img/bg-banner.png), url(data: image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJo…IgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+	background: url(img/bg-banner.png), -webkit-linear-gradient(top, rgba(255,75,0,1) 0%, rgba(255,56,0,1) 5%, rgba(255,48,0,1) 11%, rgba(234,44,0,1) 41%, rgba(190,36,0,1) 88%, rgba(190,36,0,1) 91%, rgba(200,44,0,1) 95%, rgba(210,50,0,1) 97%, rgba(232,63,0,1) 100%);
+	background: url(img/bg-banner.png), -moz-linear-gradient(top, rgba(255,75,0,1) 0%, rgba(255,56,0,1) 5%, rgba(255,48,0,1) 11%, rgba(234,44,0,1) 41%, rgba(190,36,0,1) 88%, rgba(190,36,0,1) 91%, rgba(200,44,0,1) 95%, rgba(210,50,0,1) 97%, rgba(232,63,0,1) 100%);
+	background: url(img/bg-banner.png), -o-linear-gradient(top, rgba(255,75,0,1) 0%, rgba(255,56,0,1) 5%, rgba(255,48,0,1) 11%, rgba(234,44,0,1) 41%, rgba(190,36,0,1) 88%, rgba(190,36,0,1) 91%, rgba(200,44,0,1) 95%, rgba(210,50,0,1) 97%, rgba(232,63,0,1) 100%);
+	background: url(img/bg-banner.png), -ms-linear-gradient(top, rgba(255,75,0,1) 0%, rgba(255,56,0,1) 5%, rgba(255,48,0,1) 11%, rgba(234,44,0,1) 41%, rgba(190,36,0,1) 88%, rgba(190,36,0,1) 91%, rgba(200,44,0,1) 95%, rgba(210,50,0,1) 97%, rgba(232,63,0,1) 100%);
+	background: url(img/bg-banner.png), linear-gradient(top, rgba(255,75,0,1) 0%, rgba(255,56,0,1) 5%, rgba(255,48,0,1) 11%, rgba(234,44,0,1) 41%, rgba(190,36,0,1) 88%, rgba(190,36,0,1) 91%, rgba(200,44,0,1) 95%, rgba(210,50,0,1) 97%, rgba(232,63,0,1) 100%);
+}
+
+.banner:before {
+	content: "";
+	position: absolute;
+	z-index: 1;
+	left: -14px;
+	top: 12px;
+	display: block;
+	width: 30px;
+	height: 107px;
+	background: url(img/bg_banner-wing-left.png);
+}
+
+.banner:after {
+	content: "";
+	position: absolute;
+	z-index: 1;
+	right: -14px;
+	top: 12px;
+	display: block;
+	width: 30px;
+	height: 107px;
+	background: url(img/bg_banner-wing-right.png);
+}
+
+.controls {
+	font-size: 22px;
+	text-align: center;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	background: rgba(0,0,0,.8);
+}
